@@ -81,18 +81,24 @@
 
 <!-- example 4 -->
   <!--change the colour box-->
-<style>
+<!-- <style>
     div{
         background-color: black;
         width: 100px;
         height: 100px;
+     
+
+    }
+    .widthbox{
+        height: 300px;
+        transition: 2s;
 
     }
 </style>
 
 
 
-  <div id="box"></div>
+  <div id="box" ></div>
 <button onclick="change1()">Change</button>
 <script>
     var div1=document.getElementById("box")
@@ -100,6 +106,35 @@
 
 function change1(){
     div1.style.backgroundColor="red"
+   div1.setAttribute("class","widthbox")
 
 }
-</script>
+</script> -->
+
+<!-- example 5 -->
+ <!-- <input type="text" id="box" onkeyup="ip()">
+ <h1 id="out"></h1>
+
+ <script>
+
+    var box=document.getElementById("box")
+    var out=document.getElementById("out")
+    
+function ip(){
+    out.textContent=box.value
+}
+   
+</script> -->
+
+<!-- example 6 -->
+
+<button onclick="up()">Add Hello</button>
+ <h1 id="addtext"></h1>
+
+ <script>
+    var addtext=document.getElementById("addtext")
+
+    function up(){
+        addtext.append("Hello")
+    }
+ </script>
