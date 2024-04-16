@@ -44,7 +44,7 @@
 
 <!-- example 3 -->
 
-<h1>Guess the Number from 1 to 10</h1>
+<!-- <h1>Guess the Number from 1 to 10</h1>
 <input  id="box">
 <button onclick="check()">Check</button>
 <p id="result">You are Wrong/Right</p>
@@ -75,8 +75,31 @@
        
     }
     
-</script>
+</script> -->
 
 
 
 <!-- example 4 -->
+  <!--change the colour box-->
+<style>
+    div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+
+    }
+</style>
+
+
+
+  <div id="box"></div>
+<button onclick="change1()">Change</button>
+<script>
+    var div1=document.getElementById("box")
+
+
+function change1(){
+    div1.style.backgroundColor="red"
+
+}
+</script>
